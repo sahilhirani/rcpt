@@ -6,7 +6,7 @@ bound to a repo state, hashed, and (by default) signed. Schema:
 
 ```jsonc
 {
-  "$schema": "https://unpkg.com/rcpt/schema/receipt.schema.json",
+  "$schema": "https://unpkg.com/rcpt-cli/schema/receipt.schema.json",
   "version": 1,
   "id": "rcpt-20260719-082357-83ae01",
   "createdAt": "2026-07-19T08:23:57.924Z",

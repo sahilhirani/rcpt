@@ -8,7 +8,7 @@ import { TOOL_NAME, VERSION } from "../version.js";
 
 export const RCPT_DIR = ".rcpt";
 export const LATEST_NAME = "latest.json";
-export const RECEIPT_SCHEMA_URL = "https://unpkg.com/rcpt/schema/receipt.schema.json";
+export const RECEIPT_SCHEMA_URL = "https://unpkg.com/rcpt-cli/schema/receipt.schema.json";
 
 export function sha256Hex(data: string | Buffer): string {
   return createHash("sha256").update(data).digest("hex");

@@ -9,7 +9,7 @@ import {
   red,
   yellow,
 } from "./ansi.js";
-import { HOMEPAGE, TOOL_NAME } from "../version.js";
+import { HOMEPAGE, NPM_PACKAGE, TOOL_NAME } from "../version.js";
 
 const W = 46; // content width of the thermal receipt
 
@@ -145,7 +145,7 @@ export function renderReceiptTerminal(receipt: Receipt, savedPath?: string): str
   }
   if (savedPath) L.push(`${dim("saved")}  ${savedPath}`);
   L.push(rule);
-  L.push(dim(center(`verify: npx ${TOOL_NAME} verify`)));
+  L.push(dim(center(`verify: npx ${NPM_PACKAGE} verify`)));
   L.push(dim(center("* THANK YOU FOR SHIPPING PROOF *")));
   L.push("");
   return L.join("\n");

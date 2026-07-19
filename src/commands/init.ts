@@ -5,7 +5,7 @@ import { CONFIG_FILENAME } from "../core/config.js";
 import { detectChecks } from "../core/detect.js";
 import { bold, cyan, dim, green, yellow } from "../core/ansi.js";
 
-const CONFIG_SCHEMA_URL = "https://unpkg.com/rcpt/schema/rcpt.config.schema.json";
+const CONFIG_SCHEMA_URL = "https://unpkg.com/rcpt-cli/schema/rcpt.config.schema.json";
 
 const SAMPLE = `{
   "$schema": "${CONFIG_SCHEMA_URL}",

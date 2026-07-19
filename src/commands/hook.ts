@@ -3,7 +3,7 @@ import { homedir } from "node:os";
 import { dirname, join } from "node:path";
 import { parseArgs } from "node:util";
 import { bold, cyan, dim, green, red, yellow } from "../core/ansi.js";
-import { VERSION } from "../version.js";
+import { NPM_PACKAGE, VERSION } from "../version.js";
 
 const GATE_MARKER = "rcpt gate";
 
@@ -37,16 +37,17 @@ function hasLocalRcptDependency(cwd: string): boolean {
       string,
       Record<string, string>
     >;
-    return Boolean(pkg.dependencies?.rcpt ?? pkg.devDependencies?.rcpt);
+    return Boolean(pkg.dependencies?.[NPM_PACKAGE] ?? pkg.devDependencies?.[NPM_PACKAGE]);
   } catch {
     return false;
   }
 }
 
 export function defaultGateCommand(cwd: string): string {
+  // "rcpt" here is the bin name npx resolves from node_modules/.bin.
   return hasLocalRcptDependency(cwd)
     ? "npx --no-install rcpt gate"
-    : `npx -y rcpt@${VERSION} gate`;
+    : `npx -y ${NPM_PACKAGE}@${VERSION} gate`;
 }
 
 export async function cmdHook(argv: string[], cwdOverride?: string): Promise<number> {

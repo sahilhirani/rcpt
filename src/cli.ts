@@ -9,7 +9,7 @@ import { cmdMd } from "./commands/md.js";
 import { cmdVerify } from "./commands/verify.js";
 import { findConfigPath } from "./core/config.js";
 import { bold, cyan, dim, red } from "./core/ansi.js";
-import { HOMEPAGE, TOOL_NAME, VERSION } from "./version.js";
+import { HOMEPAGE, NPM_PACKAGE, TOOL_NAME, VERSION } from "./version.js";
 
 const HELP = `
 ${bold("🧾 rcpt")} ${dim(`v${VERSION}`)} — receipts for your coding agents
@@ -40,7 +40,7 @@ ${bold("USAGE")}
   rcpt gate                (used by the hook; runnable manually)
 
 ${bold("QUICKSTART")}
-  ${cyan("npx rcpt init && npx rcpt")}
+  ${cyan(`npx ${NPM_PACKAGE} init && npx ${NPM_PACKAGE}`)}
 
 ${dim(HOMEPAGE)}
 `;

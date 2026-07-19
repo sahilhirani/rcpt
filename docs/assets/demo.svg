@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 684" width="480" height="684" role="img" aria-label="rcpt demo: npx rcpt runs checks and prints a signed receipt stamped PAID IN FULL">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 684" width="480" height="684" role="img" aria-label="rcpt demo: npx rcpt-cli runs checks and prints a signed receipt stamped PAID IN FULL">
 <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:13px;fill:#c9d1d9;white-space:pre}
 .d{fill:#8b949e}.g{fill:#3fb950}.G{fill:#3fb950;font-weight:700}.c{fill:#58a6ff}.y{fill:#d29922}.b{font-weight:700}
 .l0{opacity:0;animation:k0 16s linear infinite}@keyframes k0{0%,2.49%{opacity:0}2.50%,94%{opacity:1}97%,100%{opacity:0}}
@@ -34,7 +34,7 @@
 <rect x="1" y="1" width="478" height="682" rx="12" fill="#0d1117" stroke="#30363d"/>
 <circle cx="24" cy="24" r="6" fill="#ff5f56"/><circle cx="46" cy="24" r="6" fill="#ffbd2e"/><circle cx="68" cy="24" r="6" fill="#27c93f"/>
 <text x="454" y="28" text-anchor="end" class="d" xml:space="preserve">rcpt</text>
-<text x="26" y="58" xml:space="preserve" class="l0"><tspan class="d">$ </tspan><tspan class="t">npx </tspan><tspan class="c">rcpt</tspan></text>
+<text x="26" y="58" xml:space="preserve" class="l0"><tspan class="d">$ </tspan><tspan class="t">npx </tspan><tspan class="c">rcpt-cli</tspan></text>
 <text x="26" y="78" xml:space="preserve" class="l1"><tspan class="d">▸ typecheck: npx tsc --noEmit</tspan></text>
 <text x="26" y="98" xml:space="preserve" class="l2"><tspan class="g">✓</tspan><tspan class="t"> typecheck </tspan><tspan class="d">(1.5s)</tspan></text>
 <text x="26" y="118" xml:space="preserve" class="l3"><tspan class="d">▸ build: npx tsc -p tsconfig.build.json</tspan></text>
@@ -62,6 +62,6 @@
 <text x="26" y="558" xml:space="preserve" class="l25"><tspan class="d">    ▌█▎█▏▌█▌█▏▎▌▏▌▌▌▎▏▎▌▏▎▎▏▌▌▎██▌▎▌▎██▏▎█</tspan></text>
 <text x="26" y="578" xml:space="preserve" class="l26"><tspan class="d">saved  </tspan><tspan class="t">.rcpt/rcpt-20260719-082357-83ae01.json</tspan></text>
 <text x="26" y="598" xml:space="preserve" class="l27"><tspan class="d">══════════════════════════════════════════════</tspan></text>
-<text x="26" y="618" xml:space="preserve" class="l28"><tspan class="d">           verify: npx rcpt verify</tspan></text>
+<text x="26" y="618" xml:space="preserve" class="l28"><tspan class="d">        verify: npx rcpt-cli verify</tspan></text>
 <text x="26" y="638" xml:space="preserve" class="l29"><tspan class="y">       * THANK YOU FOR SHIPPING PROOF *</tspan></text>
 </svg>

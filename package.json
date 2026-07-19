@@ -1,5 +1,5 @@
 {
-  "name": "rcpt",
+  "name": "rcpt-cli",
   "version": "0.1.0",
   "description": "🧾 Receipts for your coding agents. Your agent says done — make it prove it. Runs your checks outside the agent, cross-examines Claude Code transcripts, and prints a signed, tamper-evident receipt.",
   "keywords": [
