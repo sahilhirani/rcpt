@@ -10,6 +10,7 @@ Your agent says *"All tests pass ✅"* — **make it prove it.**
 transcript, and prints a signed, tamper-evident receipt of what actually passed.
 
 [![CI](https://github.com/sahilhirani/rcpt/actions/workflows/ci.yml/badge.svg)](https://github.com/sahilhirani/rcpt/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/keepreceipts?label=npm%20%C2%B7%20keepreceipts)](https://www.npmjs.com/package/keepreceipts)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Zero runtime dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 
