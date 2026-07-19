@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://unpkg.com/rcpt-cli/schema/receipt.schema.json",
+  "$id": "https://unpkg.com/keepreceipts/schema/receipt.schema.json",
   "title": "rcpt receipt",
   "description": "A tamper-evident record of checks run outside a coding agent. The integrity.contentSha256 is a SHA-256 over the canonical (key-sorted) JSON of the receipt minus $schema and integrity; the optional Ed25519 signature signs that hash.",
   "type": "object",

@@ -10,6 +10,6 @@ test("version constants match package.json", () => {
   };
   expect(VERSION).toBe(pkg.version);
   expect(NPM_PACKAGE).toBe(pkg.name);
-  // The brand/command name stays `rcpt` even though the npm package is rcpt-cli.
+  // The brand/command name stays `rcpt` even though the npm package differs.
   expect(Object.keys(pkg.bin)).toEqual([TOOL_NAME]);
 });

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://unpkg.com/rcpt-cli/schema/rcpt.config.schema.json",
+  "$id": "https://unpkg.com/keepreceipts/schema/rcpt.config.schema.json",
   "title": "rcpt configuration",
   "description": "Proof obligations for a repository: the checks a coding agent's work must pass before 'done' means done.",
   "type": "object",

@@ -13,7 +13,7 @@ transcript, and prints a signed, tamper-evident receipt of what actually passed.
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Zero runtime dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 
-<img src="https://raw.githubusercontent.com/sahilhirani/rcpt/main/docs/assets/demo.svg" alt="npx rcpt-cli runs your checks and prints a signed receipt stamped PAID IN FULL" width="480">
+<img src="https://raw.githubusercontent.com/sahilhirani/rcpt/main/docs/assets/demo.svg" alt="npx keepreceipts runs your checks and prints a signed receipt stamped PAID IN FULL" width="480">
 
 </div>
 
@@ -33,18 +33,18 @@ moment "done" is claimed, in a process the agent doesn't control.
 ## Quickstart
 
 ```bash
-npx rcpt-cli init   # detects your stack, writes rcpt.config.json
-npx rcpt-cli        # runs your checks → signed receipt in .rcpt/
+npx keepreceipts init   # detects your stack, writes rcpt.config.json
+npx keepreceipts        # runs your checks → signed receipt in .rcpt/
 ```
 
-(The package is `rcpt-cli` — npm's similarity filter reserves 4-letter names —
-but the installed command is plain `rcpt`.)
+(The npm package is `keepreceipts` — npm's similarity filter reserves short
+names like `rcpt` — but the installed command is plain `rcpt`.)
 
 `rcpt.config.json` is just named commands — your proof obligations:
 
 ```json
 {
-  "$schema": "https://unpkg.com/rcpt-cli/schema/rcpt.config.schema.json",
+  "$schema": "https://unpkg.com/keepreceipts/schema/rcpt.config.schema.json",
   "checks": [
     { "name": "test", "run": "npm run test" },
     { "name": "typecheck", "run": "npx tsc --noEmit" },
@@ -125,7 +125,7 @@ current. Full format and threat model: [docs/receipt-format.md](docs/receipt-for
 ## In CI and PRs
 
 ```yaml
-- run: npx rcpt-cli check --md >> "$GITHUB_STEP_SUMMARY"
+- run: npx keepreceipts check --md >> "$GITHUB_STEP_SUMMARY"
 ```
 
 or attach the receipt to a PR:
