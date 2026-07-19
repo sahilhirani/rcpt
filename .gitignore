@@ -3,3 +3,4 @@ dist/
 .rcpt/
 *.tsbuildinfo
 .DS_Store
+LAUNCH.md

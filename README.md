@@ -13,32 +13,9 @@ transcript, and prints a signed, tamper-evident receipt of what actually passed.
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Zero runtime dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 
-</div>
+<img src="https://raw.githubusercontent.com/sahilhirani/rcpt/main/docs/assets/demo.svg" alt="npx rcpt runs your checks and prints a signed receipt stamped PAID IN FULL" width="480">
 
-```text
-══════════════════════════════════════════════
-                R E C E I P T
-         proof of work · rcpt v0.1.0
-══════════════════════════════════════════════
-repo   my-app @ 3f2c91a
-date   2026-07-19 08:23:57 UTC
-env    node v24.15.0 · win32 x64
-──────────────────────────────────────────────
-CHECK                          TIME     RESULT
-typecheck                      1.5s     ✓ PASS
-build                          1.3s     ✓ PASS
-test                           5.1s     ✓ PASS
-──────────────────────────────────────────────
-TOTAL  3/3 PASSED               ✓ PAID IN FULL
-──────────────────────────────────────────────
-id     rcpt-20260719-082357-83ae01
-sha256 a7d706f6bcd60e6a5cd6c99c… ✓ signed ed25519
-    ▌█▎█▏▌█▌█▏▎▌▏▌▌▌▎▏▎▌▏▎▎▏▌▌▎██▌▎▌▎██▏▎█
-saved  .rcpt/rcpt-20260719-082357-83ae01.json
-══════════════════════════════════════════════
-           verify: npx rcpt verify
-       * THANK YOU FOR SHIPPING PROOF *
-```
+</div>
 
 ## Why this exists
 

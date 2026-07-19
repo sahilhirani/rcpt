@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 684" width="480" height="684" role="img" aria-label="rcpt demo: npx rcpt runs checks and prints a signed receipt stamped PAID IN FULL">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:13px;fill:#c9d1d9;white-space:pre}
+.d{fill:#8b949e}.g{fill:#3fb950}.G{fill:#3fb950;font-weight:700}.c{fill:#58a6ff}.y{fill:#d29922}.b{font-weight:700}
+.l0{opacity:0;animation:k0 16s linear infinite}@keyframes k0{0%,2.49%{opacity:0}2.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l1{opacity:0;animation:k1 16s linear infinite}@keyframes k1{0%,6.87%{opacity:0}6.88%,94%{opacity:1}97%,100%{opacity:0}}
+.l2{opacity:0;animation:k2 16s linear infinite}@keyframes k2{0%,12.49%{opacity:0}12.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l3{opacity:0;animation:k3 16s linear infinite}@keyframes k3{0%,14.36%{opacity:0}14.37%,94%{opacity:1}97%,100%{opacity:0}}
+.l4{opacity:0;animation:k4 16s linear infinite}@keyframes k4{0%,19.37%{opacity:0}19.38%,94%{opacity:1}97%,100%{opacity:0}}
+.l5{opacity:0;animation:k5 16s linear infinite}@keyframes k5{0%,21.24%{opacity:0}21.25%,94%{opacity:1}97%,100%{opacity:0}}
+.l6{opacity:0;animation:k6 16s linear infinite}@keyframes k6{0%,29.37%{opacity:0}29.38%,94%{opacity:1}97%,100%{opacity:0}}
+.l7{opacity:0;animation:k7 16s linear infinite}@keyframes k7{0%,31.24%{opacity:0}31.25%,94%{opacity:1}97%,100%{opacity:0}}
+.l8{opacity:0;animation:k8 16s linear infinite}@keyframes k8{0%,33.74%{opacity:0}33.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l9{opacity:0;animation:k9 16s linear infinite}@keyframes k9{0%,34.74%{opacity:0}34.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l10{opacity:0;animation:k10 16s linear infinite}@keyframes k10{0%,35.74%{opacity:0}35.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l11{opacity:0;animation:k11 16s linear infinite}@keyframes k11{0%,36.74%{opacity:0}36.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l12{opacity:0;animation:k12 16s linear infinite}@keyframes k12{0%,37.74%{opacity:0}37.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l13{opacity:0;animation:k13 16s linear infinite}@keyframes k13{0%,38.74%{opacity:0}38.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l14{opacity:0;animation:k14 16s linear infinite}@keyframes k14{0%,39.74%{opacity:0}39.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l15{opacity:0;animation:k15 16s linear infinite}@keyframes k15{0%,40.74%{opacity:0}40.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l16{opacity:0;animation:k16 16s linear infinite}@keyframes k16{0%,41.74%{opacity:0}41.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l17{opacity:0;animation:k17 16s linear infinite}@keyframes k17{0%,42.74%{opacity:0}42.75%,94%{opacity:1}97%,100%{opacity:0}}
+.l18{opacity:0;animation:k18 16s linear infinite}@keyframes k18{0%,44.62%{opacity:0}44.63%,94%{opacity:1}97%,100%{opacity:0}}
+.l19{opacity:0;animation:k19 16s linear infinite}@keyframes k19{0%,46.49%{opacity:0}46.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l20{opacity:0;animation:k20 16s linear infinite}@keyframes k20{0%,48.37%{opacity:0}48.38%,94%{opacity:1}97%,100%{opacity:0}}
+.l21{opacity:0;animation:k21 16s linear infinite}@keyframes k21{0%,49.37%{opacity:0}49.38%,94%{opacity:1}97%,100%{opacity:0}}
+.l22{opacity:0;animation:k22 16s linear infinite}@keyframes k22{0%,52.49%{opacity:0}52.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l23{opacity:0;animation:k23 16s linear infinite}@keyframes k23{0%,53.49%{opacity:0}53.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l24{opacity:0;animation:k24 16s linear infinite}@keyframes k24{0%,54.49%{opacity:0}54.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l25{opacity:0;animation:k25 16s linear infinite}@keyframes k25{0%,55.49%{opacity:0}55.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l26{opacity:0;animation:k26 16s linear infinite}@keyframes k26{0%,56.49%{opacity:0}56.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l27{opacity:0;animation:k27 16s linear infinite}@keyframes k27{0%,57.49%{opacity:0}57.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l28{opacity:0;animation:k28 16s linear infinite}@keyframes k28{0%,58.49%{opacity:0}58.50%,94%{opacity:1}97%,100%{opacity:0}}
+.l29{opacity:0;animation:k29 16s linear infinite}@keyframes k29{0%,59.49%{opacity:0}59.50%,94%{opacity:1}97%,100%{opacity:0}}</style>
+<rect x="1" y="1" width="478" height="682" rx="12" fill="#0d1117" stroke="#30363d"/>
+<circle cx="24" cy="24" r="6" fill="#ff5f56"/><circle cx="46" cy="24" r="6" fill="#ffbd2e"/><circle cx="68" cy="24" r="6" fill="#27c93f"/>
+<text x="454" y="28" text-anchor="end" class="d" xml:space="preserve">rcpt</text>
+<text x="26" y="58" xml:space="preserve" class="l0"><tspan class="d">$ </tspan><tspan class="t">npx </tspan><tspan class="c">rcpt</tspan></text>
+<text x="26" y="78" xml:space="preserve" class="l1"><tspan class="d">▸ typecheck: npx tsc --noEmit</tspan></text>
+<text x="26" y="98" xml:space="preserve" class="l2"><tspan class="g">✓</tspan><tspan class="t"> typecheck </tspan><tspan class="d">(1.5s)</tspan></text>
+<text x="26" y="118" xml:space="preserve" class="l3"><tspan class="d">▸ build: npx tsc -p tsconfig.build.json</tspan></text>
+<text x="26" y="138" xml:space="preserve" class="l4"><tspan class="g">✓</tspan><tspan class="t"> build </tspan><tspan class="d">(1.3s)</tspan></text>
+<text x="26" y="158" xml:space="preserve" class="l5"><tspan class="d">▸ test: npx vitest run</tspan></text>
+<text x="26" y="178" xml:space="preserve" class="l6"><tspan class="g">✓</tspan><tspan class="t"> test </tspan><tspan class="d">(5.1s · 79 tests)</tspan></text>
+<text x="26" y="198" xml:space="preserve" class="l7"><tspan class="t"></tspan></text>
+<text x="26" y="218" xml:space="preserve" class="l8"><tspan class="d">══════════════════════════════════════════════</tspan></text>
+<text x="26" y="238" xml:space="preserve" class="l9"><tspan class="t">                R E C E I P T</tspan></text>
+<text x="26" y="258" xml:space="preserve" class="l10"><tspan class="d">         proof of work · rcpt v0.1.0</tspan></text>
+<text x="26" y="278" xml:space="preserve" class="l11"><tspan class="d">══════════════════════════════════════════════</tspan></text>
+<text x="26" y="298" xml:space="preserve" class="l12"><tspan class="d">repo   </tspan><tspan class="t">my-app @ 3f2c91a</tspan></text>
+<text x="26" y="318" xml:space="preserve" class="l13"><tspan class="d">date   </tspan><tspan class="t">2026-07-19 08:23:57 UTC</tspan></text>
+<text x="26" y="338" xml:space="preserve" class="l14"><tspan class="d">env    </tspan><tspan class="t">node v24.15.0 · win32 x64</tspan></text>
+<text x="26" y="358" xml:space="preserve" class="l15"><tspan class="d">──────────────────────────────────────────────</tspan></text>
+<text x="26" y="378" xml:space="preserve" class="l16"><tspan class="d">CHECK                          TIME     RESULT</tspan></text>
+<text x="26" y="398" xml:space="preserve" class="l17"><tspan class="t">typecheck                      </tspan><tspan class="d">1.5s</tspan><tspan class="t">     </tspan><tspan class="g">✓ PASS</tspan></text>
+<text x="26" y="418" xml:space="preserve" class="l18"><tspan class="t">build                          </tspan><tspan class="d">1.3s</tspan><tspan class="t">     </tspan><tspan class="g">✓ PASS</tspan></text>
+<text x="26" y="438" xml:space="preserve" class="l19"><tspan class="t">test                           </tspan><tspan class="d">5.1s</tspan><tspan class="t">     </tspan><tspan class="g">✓ PASS</tspan></text>
+<text x="26" y="458" xml:space="preserve" class="l20"><tspan class="d">──────────────────────────────────────────────</tspan></text>
+<text x="26" y="478" xml:space="preserve" class="l21"><tspan class="b">TOTAL  3/3 PASSED               </tspan><tspan class="G">✓ PAID IN FULL</tspan></text>
+<text x="26" y="498" xml:space="preserve" class="l22"><tspan class="d">──────────────────────────────────────────────</tspan></text>
+<text x="26" y="518" xml:space="preserve" class="l23"><tspan class="d">id     </tspan><tspan class="t">rcpt-20260719-082357-83ae01</tspan></text>
+<text x="26" y="538" xml:space="preserve" class="l24"><tspan class="d">sha256 </tspan><tspan class="t">a7d706f6bcd60e6a… </tspan><tspan class="g">✓ signed ed25519</tspan></text>
+<text x="26" y="558" xml:space="preserve" class="l25"><tspan class="d">    ▌█▎█▏▌█▌█▏▎▌▏▌▌▌▎▏▎▌▏▎▎▏▌▌▎██▌▎▌▎██▏▎█</tspan></text>
+<text x="26" y="578" xml:space="preserve" class="l26"><tspan class="d">saved  </tspan><tspan class="t">.rcpt/rcpt-20260719-082357-83ae01.json</tspan></text>
+<text x="26" y="598" xml:space="preserve" class="l27"><tspan class="d">══════════════════════════════════════════════</tspan></text>
+<text x="26" y="618" xml:space="preserve" class="l28"><tspan class="d">           verify: npx rcpt verify</tspan></text>
+<text x="26" y="638" xml:space="preserve" class="l29"><tspan class="y">       * THANK YOU FOR SHIPPING PROOF *</tspan></text>
+</svg>
