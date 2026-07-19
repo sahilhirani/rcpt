@@ -1,0 +1,9 @@
+{
+  "$schema": "./schema/rcpt.config.schema.json",
+  "checks": [
+    { "name": "typecheck", "run": "npx tsc --noEmit" },
+    { "name": "build", "run": "npx tsc -p tsconfig.build.json" },
+    { "name": "test", "run": "npx vitest run" }
+  ],
+  "gate": ["typecheck", "test"]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "rcpt",
+  "version": "0.1.0",
+  "description": "🧾 Receipts for your coding agents. Your agent says done — make it prove it. Runs your checks outside the agent, cross-examines Claude Code transcripts, and prints a signed, tamper-evident receipt.",
+  "keywords": [
+    "ai",
+    "agents",
+    "claude-code",
+    "verification",
+    "proof-of-work",
+    "receipts",
+    "testing",
+    "ci",
+    "codex",
+    "llm"
+  ],
+  "license": "MIT",
+  "author": "Sahil Hirani <sahilhirani97@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilhirani/rcpt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sahilhirani/rcpt/issues"
+  },
+  "homepage": "https://github.com/sahilhirani/rcpt#readme",
+  "type": "module",
+  "bin": {
+    "rcpt": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "schema",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "prepublishOnly": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://unpkg.com/rcpt/schema/rcpt.config.schema.json",
+  "title": "rcpt configuration",
+  "description": "Proof obligations for a repository: the checks a coding agent's work must pass before 'done' means done.",
+  "type": "object",
+  "required": ["checks"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Named commands that must exit 0. Each is a proof: tests pass, build compiles, lint is clean.",
+      "items": {
+        "type": "object",
+        "required": ["name", "run"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Unique name, e.g. \"test\", \"typecheck\"."
+          },
+          "run": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Shell command to run, e.g. \"npm test\"."
+          },
+          "cwd": {
+            "type": "string",
+            "description": "Working directory relative to the repo root. Defaults to \".\"."
+          },
+          "timeoutSeconds": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "Kill the check after this many seconds. Defaults to 600."
+          }
+        }
+      }
+    },
+    "gate": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Check names the agent stop-gate (`rcpt gate`) runs. Defaults to all checks."
+    },
+    "gateMaxBlocks": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "How many times per session the stop-gate may send the agent back before letting go. Default 3."
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "testGlobs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Globs treated as test files when flagging suspicious edits in agent transcripts."
+        }
+      }
+    }
+  }
+}

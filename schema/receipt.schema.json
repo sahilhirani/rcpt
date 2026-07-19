@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://unpkg.com/rcpt/schema/receipt.schema.json",
+  "title": "rcpt receipt",
+  "description": "A tamper-evident record of checks run outside a coding agent. The integrity.contentSha256 is a SHA-256 over the canonical (key-sorted) JSON of the receipt minus $schema and integrity; the optional Ed25519 signature signs that hash.",
+  "type": "object",
+  "required": ["version", "id", "createdAt", "tool", "repo", "env", "checks", "summary"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^rcpt-" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "tool": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" }
+      }
+    },
+    "repo": {
+      "type": "object",
+      "required": ["root", "git"],
+      "properties": {
+        "root": { "type": "string", "description": "Basename of the project root." },
+        "git": {
+          "type": "object",
+          "properties": {
+            "available": { "type": "boolean" },
+            "isRepo": { "type": "boolean" },
+            "head": { "type": ["string", "null"] },
+            "headShort": { "type": ["string", "null"] },
+            "branch": { "type": ["string", "null"] },
+            "dirty": { "type": "boolean" },
+            "dirtyFiles": { "type": "integer" },
+            "diffSha256": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "env": {
+      "type": "object",
+      "properties": {
+        "os": { "type": "string" },
+        "arch": { "type": "string" },
+        "node": { "type": "string" }
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "command", "exitCode", "pass", "durationMs"],
+        "properties": {
+          "name": { "type": "string" },
+          "command": { "type": "string" },
+          "cwd": { "type": "string" },
+          "exitCode": { "type": ["integer", "null"] },
+          "pass": { "type": "boolean" },
+          "timedOut": { "type": "boolean" },
+          "durationMs": { "type": "number" },
+          "stdoutTail": { "type": "string" },
+          "stderrTail": { "type": "string" },
+          "outputSha256": { "type": "string" },
+          "outputBytes": { "type": "integer" }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total", "passed", "failed", "pass"],
+      "properties": {
+        "total": { "type": "integer" },
+        "passed": { "type": "integer" },
+        "failed": { "type": "integer" },
+        "pass": { "type": "boolean" }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "description": "Optional cross-examination of an agent session transcript.",
+      "properties": {
+        "sessionFile": { "type": "string" },
+        "sessionId": { "type": ["string", "null"] },
+        "agent": { "type": "string" },
+        "finalText": { "type": ["string", "null"] },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claim": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "enum": ["test", "build", "lint", "typecheck", "file", "completion"]
+                  },
+                  "text": { "type": "string" },
+                  "file": { "type": "string" }
+                }
+              },
+              "verdict": {
+                "enum": [
+                  "corroborated",
+                  "contradicted",
+                  "unverified",
+                  "file-exists",
+                  "file-missing",
+                  "info"
+                ]
+              },
+              "evidence": { "type": "string" }
+            }
+          }
+        },
+        "testFileEdits": { "type": "array", "items": { "type": "string" } },
+        "skipMarkersAdded": { "type": "array", "items": { "type": "string" } },
+        "shellRunCount": { "type": "integer" }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["contentSha256"],
+      "properties": {
+        "contentSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "signature": {
+          "type": "object",
+          "required": ["alg", "publicKey", "sig"],
+          "properties": {
+            "alg": { "const": "Ed25519" },
+            "publicKey": { "type": "string", "description": "SPKI DER, base64." },
+            "sig": {
+              "type": "string",
+              "description": "Ed25519 signature over the contentSha256 hex string (UTF-8), base64."
+            }
+          }
+        }
+      }
+    }
+  }
+}
